@@ -1,4 +1,8 @@
-﻿using Foundation;
+﻿using System;
+using Foundation;
+using MvvmCross.Core.Platform;
+using MvvmCross.iOS.Platform;
+using MvvmCross.iOS.Views.Presenters;
 using UIKit;
 
 namespace MyFirstAppXamarin.iOS
@@ -6,8 +10,8 @@ namespace MyFirstAppXamarin.iOS
 	// The UIApplicationDelegate for the application. This class is responsible for launching the
 	// User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
 	[Register ("AppDelegate")]
-	public class AppDelegate : UIApplicationDelegate
-	{
+	public class AppDelegate : UIApplicationDelegate, IMvxApplicationDelegate
+    {
 		// class-level declarations
 
 		public override UIWindow Window {
@@ -15,11 +19,16 @@ namespace MyFirstAppXamarin.iOS
 			set;
 		}
 
-		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
+        public event EventHandler<MvxLifetimeEventArgs> LifetimeChanged;
+
+        public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
 		{
-			// Override point for customization after application launch.
-			// If not required for your application you can safely delete this method
-			return true;
+            var mvxIosPresenter = new MvxIosViewPresenter(this, Window);
+
+            var setup = new Setup(this, mvxIosPresenter);
+            setup.Initialize();
+
+            return true;
 		}
 
 		public override void OnResignActivation (UIApplication application)

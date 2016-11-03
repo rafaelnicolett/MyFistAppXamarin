@@ -1,16 +1,13 @@
-﻿using System;
-
+﻿
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Android.OS;
+using MvvmCross.Droid.Views;
 
 namespace MyFirstAppXamarin.Droid
 {
-	[Activity (Label = "MyFirstAppXamarin.Droid", MainLauncher = true, Icon = "@drawable/icon")]
-	public class MainActivity : Activity
+    [Activity (Label = "MyFirstAppXamarin.Droid", MainLauncher = true, Icon = "@drawable/icon")]
+	public class HomeView : MvxActivity
 	{
 		int count = 1;
 
