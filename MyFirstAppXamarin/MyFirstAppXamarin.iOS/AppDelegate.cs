@@ -3,6 +3,7 @@ using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
 using MvvmCross.Platform;
+using MyFirstAppXamarin.Services;
 using UIKit;
 
 namespace MyFirstAppXamarin.iOS
@@ -28,11 +29,7 @@ namespace MyFirstAppXamarin.iOS
             setup.Initialize();
 
             var startup = Mvx.Resolve<IMvxAppStart>();
-            startup.Start();
-
-            Window.RootViewController = Storyboard.InstantiateViewController("BookNavigationViewController") as BookNavigationViewController;
-
-            Window.MakeKeyAndVisible();
+			startup.Start();
 
             return true;
         }

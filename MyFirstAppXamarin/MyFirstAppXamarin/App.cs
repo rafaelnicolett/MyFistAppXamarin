@@ -18,9 +18,9 @@ namespace MyFirstAppXamarin
 
             Mvx.RegisterSingleton<IUserDialogs>(() => UserDialogs.Instance);
 
-            var bookRepository = Mvx.Resolve<IBookRepository>();
+			var bookRepository = Mvx.Resolve<IBookRepository>();
 
-            bookRepository.CreateDatabase();
+			bookRepository.CreateDatabase();
 
             RegisterAppStart<HomeViewModel>();
         }

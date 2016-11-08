@@ -22,6 +22,7 @@ namespace MyFirstAppXamarin.Services
         {
             _sqlitePlatformService = sqlitePlatformService;
             _sqlitePlatform = _sqlitePlatformService.GetPlatform();
+			_folder = FileSystem.Current.LocalStorage;;
         }
 
         public void CreateDatabase()
