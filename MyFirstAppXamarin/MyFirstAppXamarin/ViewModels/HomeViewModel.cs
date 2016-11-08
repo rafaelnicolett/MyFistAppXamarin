@@ -25,7 +25,7 @@ namespace MyFirstAppXamarin.ViewModels
             GetAllBooks();
         }
 
-        private void GetAllBooks()
+        public void GetAllBooks()
         {
             try
             {

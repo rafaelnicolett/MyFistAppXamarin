@@ -22,27 +22,31 @@
         </scene>
         <scene sceneID="143">
             <objects>
-                <tableViewController id="144" sceneMemberID="viewController" customClass="HomeViewController" storyboardIdentifier="HomeViewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="145">
+                <tableViewController id="144" sceneMemberID="viewController" customClass="HomeViewController" storyboardIdentifier="HomeViewController" hasRefreshControl="1" clearsSelectionOnViewWillAppear="YES">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="145">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="144" id="146"/>
+                            <outlet property="delegate" destination="144" id="147"/>
+                        </connections>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="148" rowHeight="90" customClass="BookTableViewCell" reuseIdentifier="bookCell" restorationIdentifier="BookTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="706" rowHeight="90" reuseIdentifier="bookCell" customClass="BookTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="148" id="149">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="706" id="707">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="240" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                            <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="708" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                            <rect key="frame" x="14" y="12" width="286" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="241" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                            <rect key="frame" x="20" y="58" width="280" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="709" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                            <rect key="frame" x="14" y="48" width="286" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -50,21 +54,147 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="lblNameBook" destination="240" id="name-outlet-240"/>
-                                    <outlet property="lblNameAuthor" destination="241" id="name-outlet-241"/>
+                                    <outlet property="lblNameBook" destination="708" id="name-outlet-708"/>
+                                    <outlet property="lblNameAuthor" destination="709" id="name-outlet-709"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="144" id="146"/>
-                            <outlet property="delegate" destination="144" id="147"/>
-                        </connections>
                     </tableView>
-                    <navigationItem title="Livros" id="237" key="navigationItem"/>
+                    <navigationItem title="Livros" id="237" key="navigationItem">
+                        <barButtonItem key="rightBarButtonItem" id="242" systemItem="add">
+                            <connections>
+                                <segue id="689" destination="246" kind="show"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="705">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="150" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-117" y="11"/>
+        </scene>
+        <scene sceneID="245">
+            <objects>
+                <viewController id="246" sceneMemberID="viewController" customClass="BookViewController" storyboardIdentifier="BookViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="243"/>
+                        <viewControllerLayoutGuide type="bottom" id="244"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="247">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="250" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Nome Livro">
+                                <rect key="frame" x="20" y="102" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="102" width="280" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="693"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="693" firstAttribute="width" constant="280"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="693"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="251" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Nome Autor">
+                                <rect key="frame" x="20" y="162" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="162" width="280" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="696"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="696" firstAttribute="width" constant="280"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="696"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="252" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="131" y="269" width="46" height="30"/>
+                                <state key="normal" title="Adicionar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="29" y="269" width="271" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="699"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="699" firstAttribute="width" constant="271"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="699"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="250"/>
+                                <exclude reference="251"/>
+                                <exclude reference="252"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="691"/>
+                                <exclude reference="692"/>
+                                <exclude reference="694"/>
+                                <exclude reference="695"/>
+                                <exclude reference="697"/>
+                                <exclude reference="698"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="250"/>
+                                <include reference="251"/>
+                                <include reference="252"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="691"/>
+                                <include reference="692"/>
+                                <include reference="694"/>
+                                <include reference="695"/>
+                                <include reference="697"/>
+                                <include reference="698"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="691" firstItem="247" firstAttribute="trailing" secondItem="250" secondAttribute="trailing" constant="20"/>
+                            <constraint id="692" firstItem="250" firstAttribute="top" secondItem="247" secondAttribute="top" constant="102"/>
+                            <constraint id="694" firstItem="247" firstAttribute="trailing" secondItem="251" secondAttribute="trailing" constant="20"/>
+                            <constraint id="695" firstItem="251" firstAttribute="top" secondItem="247" secondAttribute="top" constant="162"/>
+                            <constraint id="697" firstItem="247" firstAttribute="trailing" secondItem="252" secondAttribute="trailing" constant="20"/>
+                            <constraint id="698" firstItem="247" firstAttribute="bottom" secondItem="252" secondAttribute="bottom" constant="269"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtNameBook" destination="250" id="name-outlet-250"/>
+                        <outlet property="txtNameAuthor" destination="251" id="name-outlet-251"/>
+                        <outlet property="btnAddBook" destination="252" id="name-outlet-252"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="248" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="403" y="15"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

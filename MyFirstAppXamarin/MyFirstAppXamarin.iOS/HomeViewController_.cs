@@ -18,7 +18,19 @@ namespace MyFirstAppXamarin.iOS
 			this.Request = new MvxViewModelRequest<HomeViewModel>(null, null, new MvxRequestedBy());
 
 			base.ViewDidLoad();
+        }
 
+        public override void ViewWillAppear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+
+            ViewModel.GetAllBooks();
+
+            CreateBind();
+        }
+
+        private void CreateBind()
+        {
             var source = new MvxStandardTableViewSource(TableView, BookTableViewCell.Key);
 
             var bindings = this.CreateBindingSet<HomeViewController, HomeViewModel>();
@@ -30,13 +42,6 @@ namespace MyFirstAppXamarin.iOS
             TableView.Source = source;
 
             TableView.ReloadData();
-
-            //btnAddBook.Clicked += BtnAddBook_Clicked;
-        }
-
-        private void BtnAddBook_Clicked(object sender, EventArgs e)
-        {
-           
         }
     }
 }

@@ -263,6 +263,10 @@
     <Compile Include="BookNavigationViewController.designer.cs">
       <DependentUpon>BookNavigationViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookViewController.cs" />
+    <Compile Include="BookViewController.designer.cs">
+      <DependentUpon>BookViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bootstrap\DownloadCachePluginBootstrap.cs" />
     <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
     <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
