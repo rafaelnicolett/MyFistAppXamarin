@@ -3,11 +3,12 @@ using Android.App;
 using Android.Widget;
 using Android.OS;
 using MvvmCross.Droid.Views;
+using MyFirstAppXamarin.ViewModels;
 
 namespace MyFirstAppXamarin.Droid
 {
     [Activity (Label = "MyFirstAppXamarin.Droid", MainLauncher = true, Icon = "@drawable/icon")]
-	public class HomeView : MvxActivity
+	public class HomeView : MvxActivity<HomeViewModel>
 	{
 		int count = 1;
 

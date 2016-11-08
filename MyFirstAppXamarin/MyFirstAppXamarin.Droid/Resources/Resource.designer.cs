@@ -26,6 +26,43 @@ namespace MyFirstAppXamarin.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::AndroidHUD.Resource.Attribute.ahBarColor = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahBarColor;
+			global::AndroidHUD.Resource.Attribute.ahBarLength = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahBarLength;
+			global::AndroidHUD.Resource.Attribute.ahBarWidth = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahBarWidth;
+			global::AndroidHUD.Resource.Attribute.ahCircleColor = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahCircleColor;
+			global::AndroidHUD.Resource.Attribute.ahDelayMillis = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahDelayMillis;
+			global::AndroidHUD.Resource.Attribute.ahRadius = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahRadius;
+			global::AndroidHUD.Resource.Attribute.ahRimColor = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahRimColor;
+			global::AndroidHUD.Resource.Attribute.ahRimWidth = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahRimWidth;
+			global::AndroidHUD.Resource.Attribute.ahSpinSpeed = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahSpinSpeed;
+			global::AndroidHUD.Resource.Attribute.ahText = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahText;
+			global::AndroidHUD.Resource.Attribute.ahTextColor = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahTextColor;
+			global::AndroidHUD.Resource.Attribute.ahTextSize = global::MyFirstAppXamarin.Droid.Resource.Attribute.ahTextSize;
+			global::AndroidHUD.Resource.Drawable.ic_errorstatus = global::MyFirstAppXamarin.Droid.Resource.Drawable.ic_errorstatus;
+			global::AndroidHUD.Resource.Drawable.ic_successstatus = global::MyFirstAppXamarin.Droid.Resource.Drawable.ic_successstatus;
+			global::AndroidHUD.Resource.Drawable.roundedbg = global::MyFirstAppXamarin.Droid.Resource.Drawable.roundedbg;
+			global::AndroidHUD.Resource.Drawable.roundedbgdark = global::MyFirstAppXamarin.Droid.Resource.Drawable.roundedbgdark;
+			global::AndroidHUD.Resource.Id.loadingImage = global::MyFirstAppXamarin.Droid.Resource.Id.loadingImage;
+			global::AndroidHUD.Resource.Id.loadingProgressBar = global::MyFirstAppXamarin.Droid.Resource.Id.loadingProgressBar;
+			global::AndroidHUD.Resource.Id.loadingProgressWheel = global::MyFirstAppXamarin.Droid.Resource.Id.loadingProgressWheel;
+			global::AndroidHUD.Resource.Id.textViewStatus = global::MyFirstAppXamarin.Droid.Resource.Id.textViewStatus;
+			global::AndroidHUD.Resource.Layout.loading = global::MyFirstAppXamarin.Droid.Resource.Layout.loading;
+			global::AndroidHUD.Resource.Layout.loadingimage = global::MyFirstAppXamarin.Droid.Resource.Layout.loadingimage;
+			global::AndroidHUD.Resource.Layout.loadingprogress = global::MyFirstAppXamarin.Droid.Resource.Layout.loadingprogress;
+			global::AndroidHUD.Resource.String.library_name = global::MyFirstAppXamarin.Droid.Resource.String.library_name;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarColor = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahBarColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarLength = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahBarLength;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarWidth = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahBarWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahCircleColor = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahCircleColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahDelayMillis = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahDelayMillis;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRadius = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahRadius;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimColor = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahRimColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimWidth = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahRimWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahSpinSpeed = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahSpinSpeed;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahText;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::MyFirstAppXamarin.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::MyFirstAppXamarin.Droid.Resource.Attribute.MvxBind;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::MyFirstAppXamarin.Droid.Resource.Attribute.MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::MyFirstAppXamarin.Droid.Resource.Attribute.MvxGroupItemTemplate;
@@ -130,6 +167,11 @@ namespace MyFirstAppXamarin.Droid
 			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_reverseLayout = global::MyFirstAppXamarin.Droid.Resource.Styleable.RecyclerView_reverseLayout;
 			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_spanCount = global::MyFirstAppXamarin.Droid.Resource.Styleable.RecyclerView_spanCount;
 			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_stackFromEnd = global::MyFirstAppXamarin.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::PCLStorage.Resource.String.ApplicationName = global::MyFirstAppXamarin.Droid.Resource.String.ApplicationName;
+			global::PCLStorage.Resource.String.Hello = global::MyFirstAppXamarin.Droid.Resource.String.Hello;
+			global::Splat.Resource.String.library_name = global::MyFirstAppXamarin.Droid.Resource.String.library_name;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::MyFirstAppXamarin.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::MyFirstAppXamarin.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Animation
@@ -324,6 +366,42 @@ namespace MyFirstAppXamarin.Droid
 			
 			// aapt resource value: 0x7f010072
 			public const int activityChooserViewStyle = 2130772082;
+			
+			// aapt resource value: 0x7f01014d
+			public const int ahBarColor = 2130772301;
+			
+			// aapt resource value: 0x7f010155
+			public const int ahBarLength = 2130772309;
+			
+			// aapt resource value: 0x7f010154
+			public const int ahBarWidth = 2130772308;
+			
+			// aapt resource value: 0x7f010152
+			public const int ahCircleColor = 2130772306;
+			
+			// aapt resource value: 0x7f010151
+			public const int ahDelayMillis = 2130772305;
+			
+			// aapt resource value: 0x7f010153
+			public const int ahRadius = 2130772307;
+			
+			// aapt resource value: 0x7f01014e
+			public const int ahRimColor = 2130772302;
+			
+			// aapt resource value: 0x7f01014f
+			public const int ahRimWidth = 2130772303;
+			
+			// aapt resource value: 0x7f010150
+			public const int ahSpinSpeed = 2130772304;
+			
+			// aapt resource value: 0x7f01014a
+			public const int ahText = 2130772298;
+			
+			// aapt resource value: 0x7f01014b
+			public const int ahTextColor = 2130772299;
+			
+			// aapt resource value: 0x7f01014c
+			public const int ahTextSize = 2130772300;
 			
 			// aapt resource value: 0x7f010096
 			public const int alertDialogButtonGroupStyle = 2130772118;
@@ -2160,13 +2238,25 @@ namespace MyFirstAppXamarin.Droid
 			public const int design_snackbar_background = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int Icon = 2130837590;
+			public const int ic_errorstatus = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int navigation_empty_icon = 2130837591;
+			public const int ic_successstatus = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int notification_template_icon_bg = 2130837592;
+			public const int Icon = 2130837592;
+			
+			// aapt resource value: 0x7f020059
+			public const int navigation_empty_icon = 2130837593;
+			
+			// aapt resource value: 0x7f02005c
+			public const int notification_template_icon_bg = 2130837596;
+			
+			// aapt resource value: 0x7f02005a
+			public const int roundedbg = 2130837594;
+			
+			// aapt resource value: 0x7f02005b
+			public const int roundedbgdark = 2130837595;
 			
 			static Drawable()
 			{
@@ -2187,8 +2277,8 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f06000c
 			public const int MvxBindingTagUnique = 2131099660;
 			
-			// aapt resource value: 0x7f06007a
-			public const int action0 = 2131099770;
+			// aapt resource value: 0x7f06007e
+			public const int action0 = 2131099774;
 			
 			// aapt resource value: 0x7f060060
 			public const int action_bar = 2131099744;
@@ -2214,8 +2304,8 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f060061
 			public const int action_context_bar = 2131099745;
 			
-			// aapt resource value: 0x7f06007e
-			public const int action_divider = 2131099774;
+			// aapt resource value: 0x7f060082
+			public const int action_divider = 2131099778;
 			
 			// aapt resource value: 0x7f060003
 			public const int action_menu_divider = 2131099651;
@@ -2259,8 +2349,8 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f060049
 			public const int buttonPanel = 2131099721;
 			
-			// aapt resource value: 0x7f06007b
-			public const int cancel_action = 2131099771;
+			// aapt resource value: 0x7f06007f
+			public const int cancel_action = 2131099775;
 			
 			// aapt resource value: 0x7f06002e
 			public const int center = 2131099694;
@@ -2274,8 +2364,8 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f060057
 			public const int checkbox = 2131099735;
 			
-			// aapt resource value: 0x7f060081
-			public const int chronometer = 2131099777;
+			// aapt resource value: 0x7f060085
+			public const int chronometer = 2131099781;
 			
 			// aapt resource value: 0x7f060037
 			public const int clip_horizontal = 2131099703;
@@ -2325,8 +2415,8 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f06001f
 			public const int end = 2131099679;
 			
-			// aapt resource value: 0x7f060086
-			public const int end_padder = 2131099782;
+			// aapt resource value: 0x7f06008a
+			public const int end_padder = 2131099786;
 			
 			// aapt resource value: 0x7f060028
 			public const int enterAlways = 2131099688;
@@ -2370,8 +2460,8 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f060044
 			public const int image = 2131099716;
 			
-			// aapt resource value: 0x7f060085
-			public const int info = 2131099781;
+			// aapt resource value: 0x7f060089
+			public const int info = 2131099785;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
@@ -2379,11 +2469,11 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f060032
 			public const int left = 2131099698;
 			
-			// aapt resource value: 0x7f06007f
-			public const int line1 = 2131099775;
-			
 			// aapt resource value: 0x7f060083
-			public const int line3 = 2131099779;
+			public const int line1 = 2131099779;
+			
+			// aapt resource value: 0x7f060087
+			public const int line3 = 2131099783;
 			
 			// aapt resource value: 0x7f06000d
 			public const int listMode = 2131099661;
@@ -2391,8 +2481,17 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f060046
 			public const int list_item = 2131099718;
 			
-			// aapt resource value: 0x7f06007d
-			public const int media_actions = 2131099773;
+			// aapt resource value: 0x7f06007b
+			public const int loadingImage = 2131099771;
+			
+			// aapt resource value: 0x7f060079
+			public const int loadingProgressBar = 2131099769;
+			
+			// aapt resource value: 0x7f06007c
+			public const int loadingProgressWheel = 2131099772;
+			
+			// aapt resource value: 0x7f060081
+			public const int media_actions = 2131099777;
 			
 			// aapt resource value: 0x7f060020
 			public const int middle = 2131099680;
@@ -2403,8 +2502,8 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f060018
 			public const int multiply = 2131099672;
 			
-			// aapt resource value: 0x7f060079
-			public const int myButton = 2131099769;
+			// aapt resource value: 0x7f06007d
+			public const int myButton = 2131099773;
 			
 			// aapt resource value: 0x7f060073
 			public const int navigation_header_container = 2131099763;
@@ -2529,8 +2628,8 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f060034
 			public const int start = 2131099700;
 			
-			// aapt resource value: 0x7f06007c
-			public const int status_bar_latest_event_content = 2131099772;
+			// aapt resource value: 0x7f060080
+			public const int status_bar_latest_event_content = 2131099776;
 			
 			// aapt resource value: 0x7f06005a
 			public const int submenuarrow = 2131099738;
@@ -2541,20 +2640,23 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f06000f
 			public const int tabMode = 2131099663;
 			
-			// aapt resource value: 0x7f060084
-			public const int text = 2131099780;
+			// aapt resource value: 0x7f060088
+			public const int text = 2131099784;
 			
-			// aapt resource value: 0x7f060082
-			public const int text2 = 2131099778;
+			// aapt resource value: 0x7f060086
+			public const int text2 = 2131099782;
 			
 			// aapt resource value: 0x7f060052
 			public const int textSpacerNoButtons = 2131099730;
 			
+			// aapt resource value: 0x7f06007a
+			public const int textViewStatus = 2131099770;
+			
 			// aapt resource value: 0x7f060078
 			public const int text_input_password_toggle = 2131099768;
 			
-			// aapt resource value: 0x7f060080
-			public const int time = 2131099776;
+			// aapt resource value: 0x7f060084
+			public const int time = 2131099780;
 			
 			// aapt resource value: 0x7f060048
 			public const int title = 2131099720;
@@ -2751,43 +2853,52 @@ namespace MyFirstAppXamarin.Droid
 			public const int design_text_input_password_icon = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int Main = 2130903079;
+			public const int loading = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int notification_media_action = 2130903080;
+			public const int loadingimage = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int notification_media_cancel_action = 2130903081;
+			public const int loadingprogress = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int notification_template_big_media = 2130903082;
+			public const int Main = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_template_big_media_narrow = 2130903083;
+			public const int notification_media_action = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int notification_template_lines = 2130903084;
+			public const int notification_media_cancel_action = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int notification_template_media = 2130903085;
+			public const int notification_template_big_media = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int notification_template_part_chronometer = 2130903086;
+			public const int notification_template_big_media_narrow = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int notification_template_part_time = 2130903087;
+			public const int notification_template_lines = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int select_dialog_item_material = 2130903088;
+			public const int notification_template_media = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int select_dialog_multichoice_material = 2130903089;
+			public const int notification_template_part_chronometer = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int select_dialog_singlechoice_material = 2130903090;
+			public const int notification_template_part_time = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int support_simple_spinner_dropdown_item = 2130903091;
+			public const int select_dialog_item_material = 2130903091;
+			
+			// aapt resource value: 0x7f030034
+			public const int select_dialog_multichoice_material = 2130903092;
+			
+			// aapt resource value: 0x7f030035
+			public const int select_dialog_singlechoice_material = 2130903093;
+			
+			// aapt resource value: 0x7f030036
+			public const int support_simple_spinner_dropdown_item = 2130903094;
 			
 			static Layout()
 			{
@@ -2801,6 +2912,12 @@ namespace MyFirstAppXamarin.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f090025
+			public const int ApplicationName = 2131296293;
+			
+			// aapt resource value: 0x7f090024
+			public const int Hello = 2131296292;
 			
 			// aapt resource value: 0x7f090000
 			public const int abc_action_bar_home_description = 2131296256;
@@ -2895,8 +3012,8 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f090012
 			public const int abc_toolbar_collapse_description = 2131296274;
 			
-			// aapt resource value: 0x7f090026
-			public const int app_name = 2131296294;
+			// aapt resource value: 0x7f090028
+			public const int app_name = 2131296296;
 			
 			// aapt resource value: 0x7f090021
 			public const int appbar_scrolling_view_behavior = 2131296289;
@@ -2907,11 +3024,11 @@ namespace MyFirstAppXamarin.Droid
 			// aapt resource value: 0x7f090023
 			public const int character_counter_pattern = 2131296291;
 			
-			// aapt resource value: 0x7f090025
-			public const int hello = 2131296293;
+			// aapt resource value: 0x7f090027
+			public const int hello = 2131296295;
 			
-			// aapt resource value: 0x7f090024
-			public const int library_name = 2131296292;
+			// aapt resource value: 0x7f090026
+			public const int library_name = 2131296294;
 			
 			// aapt resource value: 0x7f090013
 			public const int search_menu_title = 2131296275;
@@ -5411,6 +5528,56 @@ namespace MyFirstAppXamarin.Droid
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
+			
+			public static int[] ProgressWheel = new int[] {
+					2130772298,
+					2130772299,
+					2130772300,
+					2130772301,
+					2130772302,
+					2130772303,
+					2130772304,
+					2130772305,
+					2130772306,
+					2130772307,
+					2130772308,
+					2130772309};
+			
+			// aapt resource value: 3
+			public const int ProgressWheel_ahBarColor = 3;
+			
+			// aapt resource value: 11
+			public const int ProgressWheel_ahBarLength = 11;
+			
+			// aapt resource value: 10
+			public const int ProgressWheel_ahBarWidth = 10;
+			
+			// aapt resource value: 8
+			public const int ProgressWheel_ahCircleColor = 8;
+			
+			// aapt resource value: 7
+			public const int ProgressWheel_ahDelayMillis = 7;
+			
+			// aapt resource value: 9
+			public const int ProgressWheel_ahRadius = 9;
+			
+			// aapt resource value: 4
+			public const int ProgressWheel_ahRimColor = 4;
+			
+			// aapt resource value: 5
+			public const int ProgressWheel_ahRimWidth = 5;
+			
+			// aapt resource value: 6
+			public const int ProgressWheel_ahSpinSpeed = 6;
+			
+			// aapt resource value: 0
+			public const int ProgressWheel_ahText = 0;
+			
+			// aapt resource value: 1
+			public const int ProgressWheel_ahTextColor = 1;
+			
+			// aapt resource value: 2
+			public const int ProgressWheel_ahTextSize = 2;
 			
 			public static int[] RecyclerView = new int[] {
 					16842948,

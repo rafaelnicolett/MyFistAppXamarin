@@ -1,16 +1,16 @@
-﻿using System;
-using Foundation;
-using MvvmCross.Core.Platform;
+﻿using Foundation;
+using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
+using MvvmCross.Platform;
 using UIKit;
 
 namespace MyFirstAppXamarin.iOS
 {
-	// The UIApplicationDelegate for the application. This class is responsible for launching the
-	// User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
-	[Register ("AppDelegate")]
-	public class AppDelegate : UIApplicationDelegate, IMvxApplicationDelegate
+    // The UIApplicationDelegate for the application. This class is responsible for launching the
+    // User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
+    [Register ("AppDelegate")]
+	public class AppDelegate : MvxApplicationDelegate
     {
 		// class-level declarations
 
@@ -18,20 +18,35 @@ namespace MyFirstAppXamarin.iOS
 			get;
 			set;
 		}
+        public static UIStoryboard Storyboard = UIStoryboard.FromName("Main", null);
 
-        public event EventHandler<MvxLifetimeEventArgs> LifetimeChanged;
-
-        public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
-		{
+        public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
+        {
             var mvxIosPresenter = new MvxIosViewPresenter(this, Window);
 
             var setup = new Setup(this, mvxIosPresenter);
             setup.Initialize();
 
-            return true;
-		}
+            var startup = Mvx.Resolve<IMvxAppStart>();
+            startup.Start();
 
-		public override void OnResignActivation (UIApplication application)
+            Window.RootViewController = Storyboard.InstantiateViewController("BookNavigationViewController") as BookNavigationViewController;
+
+            Window.MakeKeyAndVisible();
+
+            return true;
+        }
+
+        //public override void FinishedLaunching(UIApplication application)
+        //{
+        //    // NOTE: Don't call the base implementation on a Model class
+        //    // see http://docs.xamarin.com/ios/tutorials/Events%2c_Protocols_and_Delegates 
+
+        //    var setup = new Setup(this, new MvxIosViewPresenter(this, Window));
+        //    setup.Initialize();
+        //}
+
+        public override void OnResignActivation (UIApplication application)
 		{
 			// Invoked when the application is about to move from active to inactive state.
 			// This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) 
