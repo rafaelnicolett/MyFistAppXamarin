@@ -1,4 +1,4 @@
-// WARNING
+﻿// WARNING
 //
 // This file has been generated automatically by Xamarin Studio from the outlets and
 // actions declared in your storyboard file.
@@ -16,22 +16,22 @@ namespace MyFirstAppXamarin.iOS
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblAutorName { get; set; }
+        UIKit.UILabel lblNameAuthor { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblBookName { get; set; }
+        UIKit.UILabel lblNameBook { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (lblAutorName != null) {
-                lblAutorName.Dispose ();
-                lblAutorName = null;
+            if (lblNameAuthor != null) {
+                lblNameAuthor.Dispose ();
+                lblNameAuthor = null;
             }
 
-            if (lblBookName != null) {
-                lblBookName.Dispose ();
-                lblBookName = null;
+            if (lblNameBook != null) {
+                lblNameBook.Dispose ();
+                lblNameBook = null;
             }
         }
     }

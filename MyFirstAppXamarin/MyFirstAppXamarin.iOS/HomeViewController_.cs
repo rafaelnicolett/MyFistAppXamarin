@@ -1,6 +1,4 @@
-using Foundation;
 using System;
-using UIKit;
 using MvvmCross.iOS.Views;
 using MyFirstAppXamarin.ViewModels;
 using MvvmCross.Core.ViewModels;
@@ -21,17 +19,24 @@ namespace MyFirstAppXamarin.iOS
 
 			base.ViewDidLoad();
 
-			var source = new MvxStandardTableViewSource(TableView, BookTableViewCell.Key);
+            var source = new MvxStandardTableViewSource(TableView, BookTableViewCell.Key);
 
-			var bindings = this.CreateBindingSet<HomeViewController, HomeViewModel>();
+            var bindings = this.CreateBindingSet<HomeViewController, HomeViewModel>();
 
-			bindings.Bind(source).To(_ => _.Books);
+            bindings.Bind(source).To(_ => _.Books);
 
-			bindings.Apply();
+            bindings.Apply();
 
-			TableView.Source = source;
+            TableView.Source = source;
 
-			TableView.ReloadData();
-		}
+            TableView.ReloadData();
+
+            //btnAddBook.Clicked += BtnAddBook_Clicked;
+        }
+
+        private void BtnAddBook_Clicked(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
