@@ -263,10 +263,6 @@
     <Compile Include="BookNavigationViewController.designer.cs">
       <DependentUpon>BookNavigationViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="BookTableViewCell.cs" />
-    <Compile Include="BookTableViewCell.designer.cs">
-      <DependentUpon>BookTableViewCell.cs</DependentUpon>
-    </Compile>
     <Compile Include="Bootstrap\DownloadCachePluginBootstrap.cs" />
     <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
     <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
@@ -285,6 +281,10 @@
     <Compile Include="HomeViewController_.cs" />
     <Compile Include="HomeViewController_.designer.cs">
       <DependentUpon>HomeViewController_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookTableViewCell_.cs" />
+    <Compile Include="BookTableViewCell_.designer.cs">
+      <DependentUpon>BookTableViewCell_.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

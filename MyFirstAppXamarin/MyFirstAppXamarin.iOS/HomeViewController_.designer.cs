@@ -14,8 +14,16 @@ namespace MyFirstAppXamarin.iOS
     [Register ("HomeViewController")]
     partial class HomeViewController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIBarButtonItem btnAddBook { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (btnAddBook != null) {
+                btnAddBook.Dispose ();
+                btnAddBook = null;
+            }
         }
     }
 }
